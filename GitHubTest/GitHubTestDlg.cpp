@@ -171,10 +171,10 @@ void CGitHubTestDlg::OnBnClickedButton1()
 
 
 	CString d;
-	CString v = (_T("NOT YET"));
+	//CString v = (_T("NOT YET"));
 
 	d.Format(_T("%llu"), c);
 
-	m_ed_hi.SetWindowTextW(v);
+	//m_ed_hi.SetWindowTextW(v);
 	MessageBox(_T("hi   ") + d, _T("its treason then..."));
 }
