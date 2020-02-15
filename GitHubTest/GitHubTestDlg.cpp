@@ -164,6 +164,7 @@ HCURSOR CGitHubTestDlg::OnQueryDragIcon()
 void CGitHubTestDlg::OnBnClickedButton1()
 {
 	// TODO: Add your control notification handler code here
+	//тестове
 	long long int a = 444444;
 	long long int b = 555555;
 	unsigned long long int c = (a*a) * (b*b);
