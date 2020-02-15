@@ -169,9 +169,11 @@ void CGitHubTestDlg::OnBnClickedButton1()
 	unsigned long long int c = (a*a) * (b*b);
 	
 	CString d;
+	CString v=(_T("general kenobi"));
 
 	d.Format(_T("%llu"), c);
 	
-
-	MessageBox(_T("hi   ")+ d, _T("wow"));
+	m_ed_hi.SetWindowTextW(v);
+	MessageBox(_T("hi   ")+ d, _T("YOU ARE A BOLD ONE"));
+	
 }
