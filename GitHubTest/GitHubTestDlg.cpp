@@ -166,12 +166,15 @@ void CGitHubTestDlg::OnBnClickedButton1()
 	// TODO: Add your control notification handler code here
 	long long int a = 444444;
 	long long int b = 555555;
-	unsigned long long int c = (a*a) * (b*b);
-	
+	unsigned long long int c = (a * a) * (b * b);
+
+
+
 	CString d;
+	CString v = (_T("NOT YET"));
 
 	d.Format(_T("%llu"), c);
-	
 
-	MessageBox(_T("hi   ")+ d, _T("wow"));
+	m_ed_hi.SetWindowTextW(v);
+	MessageBox(_T("hi   ") + d, _T("its treason then..."));
 }
