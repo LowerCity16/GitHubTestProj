@@ -59,6 +59,7 @@ CGitHubTestDlg::CGitHubTestDlg(CWnd* pParent /*=nullptr*/)
 void CGitHubTestDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
+	DDX_Control(pDX, IDC_EDIT5, m_ed_hi);
 }
 
 BEGIN_MESSAGE_MAP(CGitHubTestDlg, CDialogEx)
@@ -163,13 +164,13 @@ HCURSOR CGitHubTestDlg::OnQueryDragIcon()
 void CGitHubTestDlg::OnBnClickedButton1()
 {
 	// TODO: Add your control notification handler code here
-	int a = 19;
-	int b = 7;
-	double c = a % b;
+	long long int a = 2222;
+	long long int b = 5555;
+	unsigned long long int c = (a*a) * (b*b);
 	
 	CString d;
 
-	d.Format(_T("%lf"), c);
+	d.Format(_T("%llu"), c);
 	
 
 	MessageBox(_T("hi   ")+ d, _T("wow"));
